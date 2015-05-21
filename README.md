@@ -1,2 +1,3 @@
-Exploring and celebrating Baltimore.
-By [Abi Z](https://twitter.com/abisackmann).
+### Exploring and celebrating Baltimore.
+
+### By [Abi Z](https://twitter.com/abisackmann).
