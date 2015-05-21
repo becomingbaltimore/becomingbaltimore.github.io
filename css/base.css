@@ -764,20 +764,23 @@ hr {
   border-radius: 3px;
 }
 
-.field-light:focus {
+.field-light:focus,
+.field-light.is-focused {
   outline: none;
   border-color: #0074d9;
   box-shadow: 0 0 0 2px #0074D9;
   box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);
 }
 
-.field-light:disabled {
+.field-light:disabled,
+.field-light.is-disabled {
   background-color: #000000;
   background-color: rgba(0,0,0,.125);
   opacity: .5;
 }
 
-.field-light:read-only:not(select) {
+.field-light:read-only:not(select),
+.field-light.is-read-only {
   background-color: #000000;
   background-color: rgba(0,0,0,.125);
 }
@@ -787,7 +790,8 @@ hr {
   border-color: #2ecc40;
 }
 
-.field-light.is-success:focus {
+.field-light.is-success:focus,
+.field-light.is-success.is-focused {
   box-shadow: 0 0 0 2px #2ECC40;
   box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);
 }
@@ -796,7 +800,8 @@ hr {
   border-color: #ffdc00;
 }
 
-.field-light.is-warning:focus {
+.field-light.is-warning:focus,
+.field-light.is-warning.is-focused {
   box-shadow: 0 0 0 2px #FFDC00;
   box-shadow: 0 0 0 2px rgba(255, 220, 0, 0.5);
 }
@@ -806,7 +811,8 @@ hr {
   border-color: #ff4136;
 }
 
-.field-light.is-error:focus {
+.field-light.is-error:focus,
+.field-light.is-error.is-focused {
   box-shadow: 0 0 0 2px #FF4136;
   box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
 }
