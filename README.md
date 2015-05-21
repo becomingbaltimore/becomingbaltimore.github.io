@@ -1,2 +1,1 @@
-# becomingbaltimore.github.io
-Website at BecomingBaltimore.me
+Blog about exploring and celebrating Baltimore
