@@ -1,1 +1,2 @@
-Blog about exploring and celebrating Baltimore
+Exploring and celebrating Baltimore.
+By [Abi Z](https://twitter.com/abisackmann).
