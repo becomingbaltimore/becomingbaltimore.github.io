@@ -1,1 +1,60 @@
+/**
+
+  Custom styles for BecomingBaltimore.me
+
+**/
+
 .vh100 { height: 100vh; }
+
+.bg-map {
+  position: fixed;
+  background-image: url(../images/BmoreMapforBlog-crop1.png);
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mt-10 { margin-top: -10rem; }
+.mt10 { margin-top: 10rem; }
+
+.z-1 { z-index: -1 }
+
+.lighter { font-weight: lighter; }
+
+/* font families */
+.slabo { font-family: "Slabo"; }
+
+.lora { font-family: "Lora"; }
+
+.merriweather { font-family: "Merriweather"; }
+
+.playfair_display { font-family: "Playfair Display"; }
+
+.signika { font-family: "Signika"; }
+
+.alegreya { font-family: "Alegreya"; }
+
+.libre_baskerville { font-family: "Libre Baskerville"; }
+
+.baskerville_old_face { font-family: "Baskerville Old Face" ;}
+
+.crete_round { font-family: "Crete Round"; }
+
+.bevan { font-family: "Bevan"; }
+
+.coustard { font-family: "Coustard"; }
+
+.cantata_one { font-family: "Cantata One"; }
+
+.bad_script { font-family: "Bad Script"; }
+
+.lusitana { font-family: "Lusitana"; }
+
+.cutive { font-family: "Cutive"; }
+
+.alice { font-family: "Alice"; }
+
+.gentium_basic { font-family: "Gentium Basic"; }
