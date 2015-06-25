@@ -234,6 +234,7 @@ h6, .h6 { font-size: 12px; font-size: .75rem }
   list-style: none;
   padding-left: 0;
 }
+
 /* Basscss Utility Layout */
 
 .inline       { display: inline }
@@ -407,6 +408,7 @@ h6, .h6 { font-size: 12px; font-size: .75rem }
   padding-right: 8px;
   padding-right: .5rem;
 }
+
 /* Basscss Grid */
 
 .container {
@@ -689,6 +691,7 @@ h6, .h6 { font-size: 12px; font-size: .75rem }
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
   .lg-flex > div { box-sizing: border-box }
 }
+
 /* Basscss Color Base */
 
 body {
@@ -1024,6 +1027,7 @@ input[type=range] {
 .table-light tr:last-child td {
   border-bottom: 0;
 }
+
 /* Basscss Button Outline */
 
 .button-outline {
@@ -1255,6 +1259,8 @@ input[type=range] {
 .border-darken-4 { border-color: #000000; border-color: rgba(0,0,0,.5) }
 .muted { opacity: .5 }
 .color-inherit { color: inherit }
+
+
 /* Basscss Media Object */
 
 .media,
@@ -1571,331 +1577,6 @@ input[type=range] {
   }
 
 }
-/* Basscss Color Buttons */
-
-/* Basscss Button Blue */
-
-.button-blue {
-  color: white;
-  background-color: #0074d9;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-  
-.button-blue:hover {
-  opacity: .875;
-}
-
-.button-blue:active,
-.button-blue.is-active {
-  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
-}
-
-.button-blue:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba(#0074d9, .5);
-}
-
-.button-blue:disabled,
-.button-blue.is-disabled {
-  opacity: .5;
-}
-/* Basscss Button Blue Outline */
-
-.button-blue-outline {
-  color: #0074d9;
-  background-color: transparent;
-  border-radius: 3px;
-  border: 1px solid #0074d9;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-  
-.button-blue-outline:hover,
-.button-blue-outline.is-active {
-  color: white;
-  background-color: #0074d9;
-}
-
-.button-blue-outline:active {
-  box-shadow: inset 0 3px 3px 0 rgba(#000,.25);
-}
-
-.button-blue-outline:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba(#0074d9, .5);
-}
-
-.button-blue-outline:disabled,
-.button-blue-outline.is-disabled {
-  color: #0074d9;
-  background-color: transparent;
-  opacity: .5;
-}
-/* Basscss Button Red */
-
-.button-red {
-  color: white;
-  background-color: #ff4136;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-  
-.button-red:hover {
-  opacity: .875;
-}
-
-.button-red:active,
-.button-red.is-active {
-  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
-}
-
-.button-red:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba(#ff4136, .5);
-}
-
-.button-red:disabled,
-.button-red.is-disabled {
-  opacity: .5;
-}
-/* Basscss Button Light Gray */
-
-.button-light-gray {
-  color: #333;
-  background-color: #ccc;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-  
-.button-light-gray:hover {
-  opacity: .875;
-}
-
-.button-light-gray:active,
-.button-light-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
-}
-
-.button-light-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(#0074d9, .5);
-}
-
-.button-light-gray:disabled,
-.button-light-gray.is-disabled {
-  opacity: .5;
-}
-
-/* Basscss Button Nav Light */
-
-.button-nav-light:hover {
-  background-color: #000000;
-  background-color: rgba(0,0,0,.0625);
-}
-.button-nav-light:active,
-.button-nav-light.is-active {
-  color: #333;
-}
-/* Basscss Button Nav Dark */
-
-.button-nav-dark {
-  color: white;
-}
-
-.button-nav-dark:hover {
-  background-color: #000000;
-  background-color: rgba(0,0,0,.125);
-}
-
-.button-nav-dark:active,
-.button-nav-dark.is-active {
-  background-color: #000000;
-  background-color: rgba(0,0,0,.125);
-}
-/* Basscss Button Link */
-
-.button-link {
-  padding-right: 0;
-  padding-left: 0;
-  color: inherit;
-  background-color: transparent;
-  background-size: 100% .25em;
-  background-repeat: repeat-x;
-  background-position: 0 24px;
-  background-position: 0 1.5rem;
-  border-radius: 0;
-}
-
-.button-link:hover,
-.button-link:focus {
-  box-shadow: none;
-  background-image: -webkit-linear-gradient(transparent 50%, currentcolor 50%);
-  background-image: linear-gradient(transparent 50%, currentcolor 50%);
-}
-
-.button-link:active,
-.button-link.is-active {
-  box-shadow: inset 0 -.125em;
-}
-
-.button-link:focus {
-  outline: none;
-  border-color: transparent;
-  box-shadow: 0 0 0 2px #000000;
-  box-shadow: 0 0 0 2px rgba(0,0,0,.25);
-}
-
-.button-link:disabled,
-.button-link.is-disabled {
-  opacity: .5;
-}
-/* Basscss Button Blue Outline */
-
-.button-blue-outline {
-  color: #0074d9;
-  background-color: transparent;
-  border-radius: 3px;
-  border: 1px solid #0074d9;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-  
-.button-blue-outline:hover,
-.button-blue-outline.is-active {
-  color: white;
-  background-color: #0074d9;
-}
-
-.button-blue-outline:active {
-  box-shadow: inset 0 3px 3px 0 rgba(#000,.25);
-}
-
-.button-blue-outline:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(white, .5), 0 0 1px 4px rgba(#0074d9, .5);
-}
-
-.button-blue-outline:disabled,
-.button-blue-outline.is-disabled {
-  color: #0074d9;
-  background-color: transparent;
-  opacity: .5;
-}
-/* Basscss Button Gray */
-
-.button-gray {
-  color: white;
-  background-color: #777;
-  border-radius: 3px;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
-}
-  
-.button-gray:hover {
-  opacity: .875;
-}
-
-.button-gray:active,
-.button-gray:is-active {
-  box-shadow: inset 0 0 0 32px rgba(#000,.125), inset 0 2px 3px 0 rgba(#000,.25);
-}
-
-.button-gray:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(#0074d9, .5);
-}
-
-.button-gray:disabled,
-.button-gray.is-disabled {
-  opacity: .5;
-}
-/* Basscss Button Nav Light */
-
-.button-nav-light {
-  color: inherit;
-  color: #0074d9;
-  background-color: transparent;
-}
-
-.button-nav-light:hover {
-  background-color: #000000;
-  background-color: rgba(0,0,0,.0625);
-}
-.button-nav-light:active,
-.button-nav-light.is-active {
-  color: #333;
-}
-/* Basscss Button Nav Dark */
-
-.button-nav-dark {
-  color: white;
-  background-color: transparent;
-}
-
-.button-nav-dark:hover {
-  background-color: #000000;
-  background-color: rgba(0,0,0,.125);
-}
-
-.button-nav-dark:active,
-.button-nav-dark.is-active {
-  background-color: #000000;
-  background-color: rgba(0,0,0,.125);
-}
-/* Basscss Button Nav Tab */
-
-.button-nav-tab {
-  margin-bottom: -1px;
-  border-radius: 3px 3px 0 0;
-  border-bottom: 1px solid #000000;
-  border-bottom: 1px solid rgba(0,0,0,.125);
-  color: #333;
-  background-color: transparent;
-}
-
-.button-nav-tab:hover {
-  background-color: #000000;
-  background-color: rgba(0,0,0,.0625);
-}
-
-.button-nav-tab.is-active {
-  background-color: white;
-  border-bottom: 1px solid white;
-  border-top: 1px solid #000000;
-  border-top: 1px solid rgba(0,0,0,.125);
-  border-left: 1px solid #000000;
-  border-left: 1px solid rgba(0,0,0,.125);
-  border-right: 1px solid #000000;
-  border-right: 1px solid rgba(0,0,0,.125);
-}
 /* Basscss Highlight */
 
 .highlight-dark .hljs {
@@ -2141,6 +1822,21 @@ input[type=range] {
   /* Mapped colors */
 }
 
+/* Optional Modules (not included in Basscss by default) */
+/*
+
+@import 'basscss-color-buttons';
+@import 'basscss-button-link';
+@import 'basscss-button-blue';
+@import 'basscss-button-blue-outline';
+@import 'basscss-button-gray';
+@import 'basscss-button-light-gray';
+@import 'basscss-button-red';
+@import 'basscss-button-nav-light';
+@import 'basscss-button-nav-dark';
+@import 'basscss-button-nav-tab';
+*/
+
 
 /* Project custom file import */
 /**
@@ -2210,4 +1906,3 @@ input[type=range] {
 
 
 /* Custom properties */
-
