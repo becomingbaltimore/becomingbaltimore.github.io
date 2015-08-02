@@ -1,0 +1,10 @@
+html,
+body { height: 100vh; }
+body { color: #111; }
+body { font-family: 'Baskerville'; }
+.p5 { padding: 80px; padding: 5rem; }
+.container { max-width: 1024px; max-width: 64rem; }
+img { max-width: 100%; }
+
+svg { max-height: 100%; }
+.absolute { position: absolute; }

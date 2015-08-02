@@ -6,11 +6,12 @@
   "scripts": {
     "css": "cssnext src/build.css public/css/index.css",
     "minify:css": "cssnext -c src/build.css public/css/index.min.css",
+    "watch:src": "watch 'npm run css && npm run minify:css' ./node_modules",
     "watch:css": "watch 'npm run css && npm run minify:css' ./src",
     "html": "ncp src/index.html public/index.html",
     "watch:html": "watch 'npm run html' ./src",
     "serve": "http-server ./public/",
-    "start": "npm run watch:css & npm run watch:html & npm run serve"
+    "start": "npm run watch:src & npm run watch:css & npm run watch:html & npm run serve"
   },
   "keywords": [
     "css4"
