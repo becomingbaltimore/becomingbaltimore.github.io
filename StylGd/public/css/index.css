@@ -157,6 +157,8 @@ hr {
 .ml6 { margin-left: 80px; margin-left: 5rem; }
 
 .mx-auto { margin: 0 auto; }
+
+.mxn2 { margin-left: -16px; margin-left: -1rem; margin-right: -16px; margin-right: -1rem; }
 /* Grid */
 
 .container {
@@ -297,6 +299,32 @@ hr {
 }
 @media (min-width: 64em) {
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+}
+/* Utility typography */
+
+.bold    { font-weight: bold; }
+.regular { font-weight: normal; }
+.italic  { font-style: italic; }
+.caps    { text-transform: uppercase; letter-spacing: .2em; }
+
+.left-align   { text-align: left; }
+.center       { text-align: center; }
+.right-align  { text-align: right; }
+.justify      { text-align: justify; }
+
+.nowrap { white-space: nowrap; }
+.break-word { word-wrap: break-word; }
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
 }
 /* Utility layout */
 

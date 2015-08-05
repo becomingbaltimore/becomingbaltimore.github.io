@@ -36,6 +36,7 @@
     "bb-positioning": "file:node_modules/bb-positioning",
     "bb-typography": "file:node_modules/bb-typography",
     "bb-utility-layout": "file:node_modules/bb-utility-layout",
+    "bb-utility-typography": "file:node_modules/bb-utility-typography",
     "bb-vars": "file:node_modules/bb-vars",
     "bb-white-space": "file:node_modules/bb-white-space"
   }
