@@ -20,6 +20,14 @@ body { margin: 0; }
 .offwhite { color: rgb(255,255,240); }
 .mustard { color: rgb(206,161,32); }
 .dusty-cobalt { color: rgb(42,62,80); }
+
+.bg-black { background-color: #000; }
+.bg-white { background-color: #fff; }
+.bg-hazey-black { background-color: rgb(43,48,59); }
+.bg-caucasian { background-color: rgb(249,241,239); }
+.bg-offwhite { background-color: rgb(255,255,240); }
+.bg-mustard { background-color: rgb(206,161,32); }
+.bg-dusty-cobalt { background-color: rgb(42,62,80); }
 /* Typography */
 
 body {
@@ -83,7 +91,6 @@ hr {
   border-bottom-width: 2px;
   border-bottom-width: .125rem;
   border-style: solid;
-  border-bottom-color: #000;
 }
 /* White space */
 
@@ -95,19 +102,19 @@ hr {
 .p5 { padding: 64px; padding: 4rem; }
 .p6 { padding: 80px; padding: 5rem; }
 
-.px1 { padding: 0 8px; padding: 0 .5rem; }
-.px2 { padding: 0 16px; padding: 0 1rem; }
-.px3 { padding: 0 32px; padding: 0 2rem; }
-.px4 { padding: 0 48px; padding: 0 3rem; }
-.px5 { padding: 0 64px; padding: 0 4rem; }
-.px6 { padding: 0 80px; padding: 0 5rem; }
+.px1 { padding-left: 8px; padding-left: .5rem; padding-right: 8px; padding-right: .5rem; }
+.px2 { padding-left: 16px; padding-left: 1rem; padding-right: 16px; padding-right: 1rem; }
+.px3 { padding-left: 32px; padding-left: 2rem; padding-right: 32px; padding-right: 2rem; }
+.px4 { padding-left: 48px; padding-left: 3rem; padding-right: 48px; padding-right: 3rem; }
+.px5 { padding-left: 64px; padding-left: 4rem; padding-right: 64px; padding-right: 4rem; }
+.px6 { padding-left: 80px; padding-left: 5rem; padding-right: 80px; padding-right: 5rem; }
 
-.py1 { padding: 8px 0; padding: .5rem 0; }
-.py2 { padding: 16px 0; padding: 1rem 0; }
-.py3 { padding: 32px 0; padding: 2rem 0; }
-.py4 { padding: 48px 0; padding: 3rem 0; }
-.py5 { padding: 64px 0; padding: 4rem 0; }
-.py6 { padding: 80px 0; padding: 5rem 0; }
+.py1 { padding-top: 8px; padding-top: .5rem; padding-bottom: 8px; padding-bottom: .5rem; }
+.py2 { padding-top: 16px; padding-top: 1rem; padding-bottom: 16px; padding-bottom: 1rem; }
+.py3 { padding-top: 32px; padding-top: 2rem; padding-bottom: 32px; padding-bottom: 2rem; }
+.py4 { padding-top: 48px; padding-top: 3rem; padding-bottom: 48px; padding-bottom: 3rem; }
+.py5 { padding-top: 64px; padding-top: 4rem; padding-bottom: 64px; padding-bottom: 4rem; }
+.py6 { padding-top: 80px; padding-top: 5rem; padding-bottom: 80px; padding-bottom: 5rem; }
 
 .m0 { margin: 0; }
 .m1 { margin: 8px; margin: .5rem; }
