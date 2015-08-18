@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'>
     <link rel="stylesheet" href="/css/index.css">
     <title>Becoming Baltimore</title>
     <meta name="description" content="">
     <meta name="author" content="Brian Zelip">
     <meta name="keywords" content="">
+
+    <script src="//cdn.jsdelivr.net/highlight.js/8.7/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
   </head>
 
   <body class="px3">
@@ -22,11 +27,11 @@
       </div>
       <div>
         <ul class="list-reset">
-          <li class="inline"><a class="btn btn-primary" href="#typography">typography</a></li>
-          <li class="inline"><a class="btn btn-primary" href="#colors">colors</a></li>
-          <li class="inline"><a class="btn btn-primary" href="#buttons">buttons</a></li>
-          <li class="inline"><a class="btn btn-primary" href="">marker</a></li>
-          <li class="inline"><a class="btn btn-primary" href="">pop up</a></li>
+          <li class="inline"><a class="btn btn-narrow" href="#typography">typography</a></li>
+          <li class="inline"><a class="btn btn-narrow" href="#colors">colors</a></li>
+          <li class="inline"><a class="btn btn-narrow" href="#buttons">buttons</a></li>
+          <li class="inline"><a class="btn btn-narrow" href="">marker</a></li>
+          <li class="inline"><a class="btn btn-narrow" href="">pop up</a></li>
         </ul>
       </div>
     </header>
@@ -35,7 +40,7 @@
 
     <main>
       <section class="py3">
-        <h1 class="h4"><a name="typography" class="black">Typography</a></h1>
+        <h1 class="h4 mt0"><a name="typography" class="black">Typography</a></h1>
           <div class="mt1 mb1 p2 border">
             <h1 class="h5">type scale</h1>
             <h1 class="h0">Baltimore</h1>
@@ -45,10 +50,55 @@
             <h4>Baltimore</h4>
             <h5>Baltimore</h5>
             <h6>Baltimore</h6>
+            <section class="mt2">
+              <pre>
+                <code class="html px2">
+&lt;h1 class="h0"&gt;Baltimore&lt;/h1&gt;
+&lt;h1&gt;Baltimore&lt;/h1&gt;
+&lt;h2&gt;Baltimore&lt;/h2&gt;
+&lt;h3&gt;Baltimore&lt;/h3&gt;
+&lt;h4&gt;Baltimore&lt;/h4&gt;
+&lt;h5&gt;Baltimore&lt;/h5&gt;
+&lt;h6&gt;Baltimore&lt;/h6&gt;
+                </code>
+              </pre>
+            </section>
+          </div>
+          <div class="mt1 mb1 p2 border">
+            <h1 class="h5 mb4">fonts</h1>
+            <p class="serif">Baskerville is the primary font and will be used if the user has it available on their device.</p>
+            <p class="serif-web">Libre Baskerville is the secondary font and is delivered over the web.</p>
+            <section class="mt2">
+              <pre>
+                <code class="html px2">
+&lt;p class="serif"&gt;Baskerville&lt;/p&gt;
+&lt;p class="serif-web"&gt;Libre Baskerville&lt;/p&gt;
+                </code>
+              </pre>
+            </section>
           </div>
           <div class="mt1 mb1 p2 border">
             <h1 class="h5 mb4">prose</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellat, pariatur minima magnam consequuntur mollitia fugiat placeat molestiae neque libero nobis ipsam. Commodi eos atque, voluptatibus obcaecati, officiis illum nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore et, quisquam hic quia corporis, maiores ducimus tempora ipsam a, repudiandae delectus facere, ad! Quasi quibusdam neque ducimus obcaecati odit, beatae.</p>
+            <section class="mt2">
+              <pre>
+                <code class="html px2">
+&lt;p&gt;Lorem ipsum...&lt;/p&gt;
+                </code>
+              </pre>
+            </section>
+          </div>
+          <div class="mt1 mb1 p2 border">
+            <h1 class="h5 mb4">links</h1>
+            <p>Here's a line of text with <a href="#">a link at the end</a>.</p>
+            <p>This line has <a href="#">a link</a> in the beginning.</p>
+            <section class="mt2">
+              <pre>
+                <code class="html px2">
+&lt;a href=""&gt;a link&lt;/a&gt;
+                </code>
+              </pre>
+            </section>
           </div>
           <div class="mt1 mb1 p2 border">
             <h1 class="h5 mb4">lists</h1>
@@ -64,6 +114,18 @@
               <li>third</li>
               <li>and fourth</li>
             </ol>
+            <section class="mt2">
+              <pre>
+                <code class="html px2">
+&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/u&gt;
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+                </code>
+              </pre>
+            </section>
           </div>
       </section>
 
@@ -106,7 +168,12 @@
       <section class="py3">
         <h1 class="h4"><a name="buttons" class="black">Buttons  </a></h1>
         <div class="mt1 mb1 p2 border">
-
+          <button class="btn">Button</button>
+          <button class="btn btn-primary">Primary Button</button>
+          <div class="btn btn-black">Black Button</div>
+          <div class="btn btn-hazey-black">Hazey Black Button</div>
+          <a href="#" class="btn btn-dusty-cobalt">Dusty Cobalt Button</a>
+          <a href="#" class="btn btn-mustard">Mustard Button</a>
         </div>     
       </section>
 

@@ -19,7 +19,6 @@
   "author": "bzelip",
   "license": "GPL-3.0",
   "devDependencies": {
-    "bb-borders": "file:node_modules/bb-borders",
     "cssnext": "^1.8.2",
     "http-server": "^0.8.0",
     "ncp": "^2.0.0",
@@ -27,10 +26,12 @@
   },
   "dependencies": {
     "bb-base": "file:node_modules/bb-base",
+    "bb-borders": "file:node_modules/bb-borders",
     "bb-btn": "file:node_modules/bb-btn",
     "bb-colors": "file:node_modules/bb-colors",
     "bb-flex": "file:node_modules/bb-flex",
     "bb-grid": "file:node_modules/bb-grid",
+    "bb-highlight": "file:node_modules/bb-highlight",
     "bb-images": "file:node_modules/bb-images",
     "bb-links": "file:node_modules/bb-links",
     "bb-positioning": "file:node_modules/bb-positioning",

@@ -51,6 +51,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 
+.h0    { font-size: 48px; font-size: 3rem; }
+h1,.h1 { font-size: 32px; font-size: 2rem; }
+h2,.h2 { font-size: 24px; font-size: 1.5rem; }
+h3,.h3 { font-size: 20px; font-size: 1.25rem; }
+h4,.h4 { font-size: 16px; font-size: 1rem; }
+h5,.h5 { font-size: 14px; font-size: .875rem; }
+h6,.h6 { font-size: 12px; font-size: .75rem; }
+
 p {
   margin-top: 16px;
   margin-top: 1rem;
@@ -65,13 +73,19 @@ dl, ol, ul {
   margin-bottom: .5rem;
 }
 
-.h0 { font-size: 48px; font-size: 3rem; }
-h1,.h1 { font-size: 32px; font-size: 2rem; }
-h2,.h2 { font-size: 24px; font-size: 1.5rem; }
-h3,.h3 { font-size: 20px; font-size: 1.25rem; }
-h4,.h4 { font-size: 16px; font-size: 1rem; }
-h5,.h5 { font-size: 14px; font-size: .875rem; }
-h6,.h6 { font-size: 12px; font-size: .75rem; }
+pre, code, samp {
+  font-family: 'Source Code Pro', Consolas, monospace;
+  font-size: 14px;
+  font-size: .875rem;
+}
+
+pre {
+  margin-top: 16px;
+  margin-top: 1rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+}
 /* Links */
 
 a {
@@ -83,6 +97,8 @@ a:hover { text-decoration: underline; }
 /* Borders */
 
 .border { border: 1px solid #000000; border: 1px solid rgba(0,0,0,.25); }
+
+.border-bold { border: 2px solid #000000; border: 2px solid rgba(0,0,0,.5); }
 
 .rounded { border-radius: 3px; }
 
@@ -361,8 +377,8 @@ svg { max-height: 100%; }
 /* Buttons */
 
 .btn {
-  padding: 8px 12px;
-  padding: .5rem .75rem;
+  padding: 8px 16px;
+  padding: .5rem 1rem;
   font-family: inherit;
   font-size: 14px;
   font-size: 0.875rem;
@@ -379,7 +395,24 @@ svg { max-height: 100%; }
   background-color: transparent;
 }
 
+.btn:hover {
+  border-color: #000000;
+  border-color: rgba(0, 0, 0, 0.125);
+  text-decoration: underline;
+  opacity: .875;
+}
+
+.btn:focus,
+.btn:active {
+  outline: 0px none;
+  border-color: #000000;
+  border-color: rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+}
+
 .btn-primary {
+  background-color: rgb(249,241,239);
   color: #000;
 }
 
@@ -387,17 +420,173 @@ svg { max-height: 100%; }
   color: rgb(206,161,32);
   border: 1px solid #000000;
   border: 1px solid rgba(0,0,0,0.125);
+  text-decoration: none;
 }
 
 .btn-primary:active {
-  box-shadow: 0px 0px 0px 20rem rgba(0, 0, 0, 0.125) inset, 0px 3px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 1px rgba(0, 0, 0, 0.125);
+  /*box-shadow: 0px 0px 0px 20rem rgba(0, 0, 0, 0.125) inset, 0px 3px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 0px 1px rgba(0, 0, 0, 0.125);*/
 }
 
-.btn-primary:focus {
-  outline: 0px none;
-  border-color: #000000;
-  border-color: rgba(0, 0, 0, 0.125);
-  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.25);
+.btn-narrow {
+  padding-left: 8px;
+  padding-left: .5rem;
+  padding-right: 8px;
+  padding-right: .5rem;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-hazey-black {
+  background-color: rgb(43,48,59);
+  color: #fff;
+}
+
+.btn-dusty-cobalt {
+  background-color: rgb(42,62,80);
+  color: #fff;
+}
+
+.btn-mustard {
+  background-color: rgb(206,161,32);
+  color: #000;
+}
+
+.btn-caucasian {
+  background-color: rgb(249,241,239);
+  color: #000;
+}
+
+.btn-offwhite {
+  background-color: rgb(255,255,240);
+  color: #000;
+}
+/* Highlight.js customization */
+
+.hljs {
+  display: block;
+  padding: 8px;
+  padding: .5rem;
+  background: rgba(0,0,0,.05) none repeat scroll 0% 0%;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #AAAAAA;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #000;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #3D9970;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #FF4136;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #FF4136;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #001f3f;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #001f3f;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #3D9970;
+}
+
+.hljs-regexp {
+  color: #3D9970;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #B10DC9;
+}
+
+.hljs-built_in {
+  color: #001f3f;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #AAAAAA;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #F012BE;
+}
+
+.hljs-addition {
+  background: #01FF70;
+}
+
+.diff .hljs-change {
+  background: #001f3f;
+}
+
+.hljs-chunk {
+  color: #DDDDDD;
+}
+
+
+:root {
+
+  /* Mapped colors */
 }
 
 /* Variables */
